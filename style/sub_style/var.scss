@@ -1,7 +1,8 @@
-$font-stack:   'Roboto';
+$font-stack: 'Roboto';
 $primary-color: #333;
 $light-color: #BDBDBD;
 $footer-color: #2C2C2C;
+$bacground-color: #FBFBFB;
 
 @mixin container {
     max-width: 1200px;
@@ -13,10 +14,22 @@ $footer-color: #2C2C2C;
 @mixin button {
     width: 222px;
     height: 71px;
-    border: none;
+    
+}
+
+// стилидля надписи на кнопке
+@mixin button_title {
+    text-decoration: none;
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
     
 // большой светлый заголовок
+
 @mixin big_title_light {
     font-family: $font-stack;
     font-weight: 300;
@@ -24,11 +37,11 @@ $footer-color: #2C2C2C;
     line-height: 64px;
     text-transform: uppercase;
     color: $light-color;
-    
 }
 
 // большой темный заголовок
-@mixin big_title_light {
+
+@mixin big_title_dark {
     font-family: $font-stack;
     font-weight: 700;
     font-size: 64px;

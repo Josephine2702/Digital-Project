@@ -1,4 +1,4 @@
-@import "..//sub_style/normalize.css";
+@import "../sub_style/normalize.css";
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/Roboto.woff2") format("woff2");
@@ -28,4 +28,118 @@
   src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
+}
+.first_screen {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.light_title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: #BDBDBD;
+  width: 280px;
+}
+
+.dark_title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333;
+  text-transform: none;
+}
+
+.first_screen__img {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.first_screen__btn {
+  position: absolute;
+  bottom: -46%;
+  right: 46.1%;
+}
+
+.btn {
+  width: 222px;
+  height: 71px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.first_screen__btn {
+  display: flex;
+}
+
+.btn_title {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: black;
+  margin-left: -15%;
+}
+
+.arrow {
+  width: 17px;
+  margin-left: 18px;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 435px;
+  background-color: #FBFBFB;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about_images {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 63% 1fr;
+  gap: 40px;
+  margin-left: 80px;
+}
+
+.about__article {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  align-items: flex-start;
+}
+
+.img--center {
+  margin-top: 30px;
+}
+
+.about__title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #BDBDBD;
+}
+
+.about__text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  color: black;
+  max-width: 400px;
 }/*# sourceMappingURL=global.css.map */
