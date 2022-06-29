@@ -1,0 +1,57 @@
+$font-stack:   'Roboto';
+$primary-color: #333;
+$light-color: #BDBDBD;
+$footer-color: #2C2C2C;
+
+@mixin container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+// кнопка
+@mixin button {
+    width: 222px;
+    height: 71px;
+    border: none;
+}
+    
+// большой светлый заголовок
+@mixin big_title_light {
+    font-family: $font-stack;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    color: $light-color;
+    
+}
+
+// большой темный заголовок
+@mixin big_title_light {
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: $primary-color;
+}
+
+// стили текста
+@mixin text_style {
+    font-family: $font-stack;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: black;
+    }
+
+// подзаголовки
+@mixin subtitle {
+    font-family: $font-stack;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: $light-color;   
+    
+}
+
