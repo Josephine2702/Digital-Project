@@ -16,15 +16,16 @@
 }
 
 .first_screen__img{
-    position: relative;
+    background-image: url('/assets/image/Rectangle_main.jpg');
+    width: 770px;
+    height: 829px;
     margin-bottom: 120px;
+    display: flex;
 }
 
 
 .first_screen__btn{
-    position: absolute;
-    bottom: -46%;
-    right: 46.1%;
+align-self: flex-end;
 }
 
 .btn {
@@ -40,6 +41,9 @@
     
 .btn_title{
     @include button_title;
+}
+
+.title-view{
     color: black;
     margin-left: -15%;
 }
@@ -52,10 +56,11 @@
 
 .about {
     @include container;
-    height: 435px;
+    min-width: 1170px;
+    height: 27em;
     background-color: $bacground-color;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .about_images {
@@ -65,26 +70,180 @@
     grid-template-rows: 63% 1fr;
     gap: 40px;
     margin-left: 80px;
+
 }
 
 .about__article {
-    display: flex;
-    flex-direction: column;
-    justify-items: flex-start;
-    align-items: flex-start;
-    
+margin-top: -2.5%;
+margin-left: 30px;
 }
 
 .img--center {
     margin-top: 30px;
 }
 
+.subtitle{
+@include subtitle;
+}
 
 .about__title{
-    @include subtitle;
+    margin-bottom: 20px;
 }
 
 .about__text{
     @include text_style;
     max-width: 400px;
+    margin-bottom: 13%;
+}
+
+.about__btn{
+    display: flex;
+    
+
+    .title-read {
+        color: black;
+
+    }
+}
+
+.focus{
+    @include container;
+    min-width: 1170px;
+
+.focus__subtitle {
+    margin-top: 9.3%;
+    margin-left: -1.5%;
+}
+}
+
+.focus__descr{
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1.5%;
+    }
+
+.state {
+    display: flex;
+}
+
+.number {
+    font-family: $font-stack;
+    font-weight: 900;
+    font-size: 200px;
+    line-height: 150px;
+    color: #F2F2F2;
+    margin-right: 4%;
+}
+
+.focus__text {
+    font-family:$font-stack;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: $primary-color;
+    align-self: center;
+
+}
+
+.focus__first{
+    flex-basis: 35%;
+}
+
+.focus__second {
+    flex-basis: 46%;
+    margin-right: 6%;
+}
+
+.focus__two{
+    margin-right: 6.5%;
+}
+
+.project{
+    @include container;
+    
+}
+
+.project__subtitle{
+    margin-bottom: 60px;
+}
+
+.project__block{
+    display: grid;
+    gap: 30px;
+
+    .project__block_top{
+        display: grid;
+        column-gap: 15px;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .project__block_bottom{
+        display: grid;
+        column-gap: 30px;
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+}
+
+.btn-block{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    min-width: 1170px;
+    margin-bottom: 120px;
+}
+
+.project__btn{
+    display: flex;
+    background-color: $primary-color;
+    
+
+    .title-all{
+        color: white;
+    }
+    .arrow_white{
+        margin-top: -2px;
+    }
+}
+
+.contact{
+    @include container;
+}
+
+.contact__block{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact__form-item{
+    width: 380px;
+    height: 46px;
+    background-color: $bacground-color;
+    margin-bottom: 10px;
+    padding-left: 21px;
+    border: none;
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
+    color: #8D8D8D;
+    
+}
+
+.message{
+    padding-top: 14px;
+    resize: none;
+    height: 8.6em;
+    margin-bottom: 4.8em;
+}
+
+.contact__btn{
+    display: flex;
+    background-color: $primary-color;
+
+    .title-send{
+        color: white;
+    }
 }
