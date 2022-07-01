@@ -77,3 +77,23 @@ $bacground-color: #FBFBFB;
     line-height: 12px;
     color: $primary-color;
 }
+
+// заголовок футер
+@mixin footer_h {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+// текст футер
+@mixin footer_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
