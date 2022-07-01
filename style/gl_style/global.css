@@ -1,15 +1,18 @@
 @import "../sub_style/normalize.css";
+
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/Roboto.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/Robotolight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
+
   @font-face {
     font-family: "Roboto";
     src: url("/fonts/Robotomedium.woff2") format("woff2");
@@ -17,18 +20,21 @@
     font-style: normal;
   }
 }
+
 @font-face {
   font-family: "Roboto";
   src: url("/fonts/Robotobold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Open Sans";
   src: url("/fonts/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
+
 .first_screen {
   max-width: 1170px;
   margin: 0 auto;
@@ -155,6 +161,7 @@
 .about__btn {
   display: flex;
 }
+
 .about__btn .title-read {
   color: black;
 }
@@ -165,6 +172,7 @@
   padding: 0 15px;
   min-width: 1170px;
 }
+
 .focus .focus__subtitle {
   margin-top: 9.3%;
   margin-left: -1.5%;
@@ -225,16 +233,18 @@
   display: grid;
   gap: 30px;
 }
+
 .project__block .project__block_top {
   display: grid;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   grid-template-columns: 50% 50%;
 }
+
 .project__block .project__block_bottom {
   display: grid;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -250,9 +260,11 @@
   display: flex;
   background-color: #333;
 }
+
 .project__btn .title-all {
   color: white;
 }
+
 .project__btn .arrow_white {
   margin-top: -2px;
 }
@@ -294,6 +306,9 @@
   display: flex;
   background-color: #333;
 }
+
 .contact__btn .title-send {
   color: white;
-}/*# sourceMappingURL=global.css.map */
+}
+
+/*# sourceMappingURL=global.css.map */
