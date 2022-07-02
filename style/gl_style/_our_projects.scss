@@ -1,0 +1,116 @@
+.project__content {
+    padding: 0px 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas:
+        "first first"
+        "second second"
+        "third third";
+    gap: 60px;
+}
+
+.sample__first-content {
+    margin: 30px 30px 30px 30px;
+}
+
+.sample__first {
+    background-color: $bacground-color;
+    grid-area: first;
+    @include display_grid_project;
+    @include display_flex_ourproject;
+
+    &-text {
+        @include text_style
+    }
+
+    &-title {
+        @include title_our_project
+    }
+
+}
+
+.sample__first-img {
+    max-width: 100%
+}
+
+.sample__btn-arrow {
+    width: 24px;
+    margin-left: 18px
+}
+
+.sample__btn {
+
+    @include button;
+    @include button_title;
+    background-color: #FFFFFF;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sample__second-content {
+    margin: 30px 30px 30px 30px;
+}
+
+.sample__second {
+    background-color: $bacground-color;
+    grid-area: second;
+    @include display_grid_project;
+    @include display_flex_ourproject;
+
+    &-text {
+        @include text_style;
+        max-width: 100%
+    }
+
+    &-title {
+        @include title_our_project
+    }
+
+    &-img {
+        max-width: 100%
+    }
+}
+
+.sample__third-content {
+    margin: 30px 30px 30px 30px;
+}
+
+.sample__third {
+    background-color: $bacground-color;
+    grid-area: third;
+    @include display_grid_project;
+    @include display_flex_ourproject;
+
+    &-text {
+        @include text_style
+    }
+
+    &-title {
+        @include title_our_project
+    }
+
+    &-img {
+        max-width: 100%
+    }
+}
+
+
+.project__title-light {
+    @include big_title_light;
+    text-transform: none;
+}
+
+.project__title-dark {
+    @include big_title_dark;
+    display: block;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.project__title {
+    max-width: 1170px;
+
+}
