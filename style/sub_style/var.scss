@@ -97,3 +97,38 @@ $bacground-color: #FBFBFB;
     line-height: 24px;
     color: #FFFFFF;
 }
+
+//стиль грид для блоков страница Our Project
+@mixin display_grid_project {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img text";
+
+    img {
+        grid-area: img;
+    }
+
+    article {
+        grid-area: text;
+    }
+}
+
+//стиль flex для блоков страница Our Project
+@mixin display_flex_ourproject {
+    article {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+// стиль подзаголовок страница Our Project
+@mixin title_our_project {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 47px;
+    color: $light-color;
+}
