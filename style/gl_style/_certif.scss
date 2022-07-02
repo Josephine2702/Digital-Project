@@ -1,0 +1,25 @@
+.certif{
+    @include container;
+    
+}
+
+.light_title{
+    @include big_title_light;
+    text-transform: uppercase;
+}
+
+.dark_title {
+    @include big_title_dark;
+}
+
+.certif__img{
+    width: 600px;
+}
+
+.certif__block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 120px;
+}
