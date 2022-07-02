@@ -298,7 +298,13 @@
   color: white;
 }
 
-<<<<<<< HEAD
+.gallery {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 1170px;
+}
+
 .certif {
   max-width: 1170px;
   margin: 0 auto;
@@ -431,7 +437,8 @@
   text-transform: uppercase;
   color: white;
   letter-spacing: 0.2em;
-=======
+}
+
 .header {
   width: 100%;
   min-height: 102px;
@@ -573,5 +580,4 @@ a {
   line-height: 24px;
   color: #FFFFFF;
   text-decoration: none;
->>>>>>> 7dae4f6857b69c61d7e995a8699752bbea3c5e40
 }/*# sourceMappingURL=global.css.map */
