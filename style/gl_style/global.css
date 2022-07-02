@@ -43,8 +43,8 @@
   font-weight: 300;
   font-size: 64px;
   line-height: 64px;
-  text-transform: uppercase;
   color: #BDBDBD;
+  text-transform: uppercase;
   width: 280px;
 }
 
@@ -296,4 +296,138 @@
 }
 .contact__btn .title-send {
   color: white;
+}
+
+.certif {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.light_title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #BDBDBD;
+  text-transform: uppercase;
+}
+
+.dark_title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333;
+}
+
+.certif__img {
+  width: 600px;
+}
+
+.certif__block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 120px;
+}
+
+.contacts {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.light_title {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+  color: #BDBDBD;
+  text-transform: none;
+}
+
+.dark_title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333;
+}
+
+.contacts__container {
+  max-width: 1440px;
+  min-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts__img {
+  background-image: url("/assets/image/map.jpg");
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  max-width: 790px;
+  height: 31em;
+  margin-left: auto;
+}
+
+.contacts__block {
+  display: flex;
+  flex-direction: column;
+  margin-top: -34%;
+  margin-left: 8.4%;
+}
+.contacts__block .contacts__name {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 0px;
+  color: #333;
+  margin: 0;
+  margin-top: -25px;
+}
+.contacts__block .contacts__name-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  color: #333;
+  font-size: 18px;
+}
+.contacts__block .contacts__coordinate {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  margin-top: 44px;
+}
+.contacts__block .contacts__email {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  margin-top: 53px;
+}
+.contacts__block .btn {
+  width: 222px;
+  height: 71px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33px;
+}
+.contacts__block .btn_title {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.2em;
 }/*# sourceMappingURL=global.css.map */

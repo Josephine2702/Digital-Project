@@ -1,0 +1,85 @@
+.contacts{
+@include container;
+}
+
+.light_title{
+    @include big_title_light;
+    text-transform: none;
+}
+
+.dark_title {
+    @include big_title_dark;
+}
+
+.contacts__container{
+    max-width: 1440px;
+    min-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.contacts__img{
+    background-image: url('/assets/image/map.jpg');
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    max-width: 790px;
+    height: 31em;
+    margin-left:  auto;
+}
+
+.contacts__block{
+    display: flex;
+    flex-direction: column;
+    margin-top: -34%;
+    margin-left: 8.4%;
+
+    .contacts__name{
+        font-family: $font-stack;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 0px;
+        color: $primary-color;
+        margin: 0;
+        margin-top: -25px
+        
+    }
+
+    .contacts__name-title{
+        @include big_title_dark;
+        font-size: 18px;
+    }
+
+    .contacts__coordinate{
+        font-family: $font-stack;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+        color: $primary-color;
+        margin-top: 44px;
+    }
+
+    .contacts__email{
+        font-family: $font-stack;
+        font-weight: 300;
+        font-size: 16px;
+        color: $primary-color;
+        text-decoration: none;
+        margin-top: 53px;
+    }
+
+    .btn {
+        @include button;
+        background-color: $primary-color;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        margin-top: 33px;
+    }
+    
+    .btn_title{
+        @include button_title;
+        color: white;
+        letter-spacing: 0.2em;
+    }
+}

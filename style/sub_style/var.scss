@@ -17,7 +17,7 @@ $bacground-color: #FBFBFB;
     
 }
 
-// стилидля надписи на кнопке
+// стили для надписи на кнопке
 @mixin button_title {
     text-decoration: none;
     font-family: $font-stack;
@@ -35,7 +35,6 @@ $bacground-color: #FBFBFB;
     font-weight: 300;
     font-size: 64px;
     line-height: 64px;
-    text-transform: uppercase;
     color: $light-color;
 }
 
