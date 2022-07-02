@@ -14,7 +14,7 @@ $bacground-color: #FBFBFB;
 @mixin button {
     width: 222px;
     height: 71px;
-    
+
 }
 
 // стили для надписи на кнопке
@@ -27,7 +27,7 @@ $bacground-color: #FBFBFB;
     letter-spacing: 0.2em;
     text-transform: uppercase;
 }
-    
+
 // большой светлый заголовок
 
 @mixin big_title_light {
@@ -55,7 +55,7 @@ $bacground-color: #FBFBFB;
     font-size: 16px;
     line-height: 25px;
     color: black;
-    }
+}
 
 // подзаголовки
 @mixin subtitle {
@@ -63,7 +63,36 @@ $bacground-color: #FBFBFB;
     font-weight: 300;
     font-size: 64px;
     line-height: 64px;
-    color: $light-color;   
-    
+    color: $light-color;
+
 }
 
+// текст навигации
+@mixin nav_style {
+    font-family: $font-stack;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: $primary-color;
+}
+
+// заголовок футер
+@mixin footer_h {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+// текст футер
+@mixin footer_text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
