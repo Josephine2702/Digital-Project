@@ -293,17 +293,42 @@
 .contact__btn {
   display: flex;
   background-color: #333;
+  margin-bottom: 120px;
 }
 .contact__btn .title-send {
   color: white;
 }
 
-<<<<<<< HEAD
 .gallery {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
-  min-width: 1170px;}
+  min-width: 1170px;
+}
+
+.light_title {
+  margin-bottom: 0;
+}
+
+.gallery__title {
+  margin-bottom: 30px;
+}
+
+.gallery__block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  border-top: solid 1px #F2F2F2;
+  padding-top: 30px;
+  margin-bottom: 120px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 1170px;
+}
 
 .project__content {
   padding: 0px 0px;
@@ -353,6 +378,10 @@
   color: #BDBDBD;
 }
 
+.project__title {
+  margin-bottom: 60px;
+}
+
 .sample__first-img {
   max-width: 100%;
 }
@@ -377,6 +406,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
 }
 
 .sample__second-content {
@@ -542,6 +572,7 @@
 
 .sample__blockfour {
   grid-area: four;
+  margin-bottom: 120px;
 }
 
 .sample__content-imgthree {
@@ -554,13 +585,16 @@
   font-size: 16px;
   line-height: 25px;
   color: black;
->>>>>>> 3b40ff90023e0f2a154a485cbf99762353b4eadc
 }
 
 .certif {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.sertif__title {
+  margin-bottom: 60px;
 }
 
 .light_title {
@@ -678,6 +712,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 33px;
+  margin-bottom: 112px;
 }
 .contacts__block .btn_title {
   text-decoration: none;
@@ -704,7 +739,11 @@
 .header__nav {
   flex-grow: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-left: -50px;
+}
+.header__link {
+  margin-right: 60px;
 }
 .header a {
   font-family: "Roboto";
@@ -713,6 +752,7 @@
   font-size: 12px;
   line-height: 12px;
   color: #333;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .header span {
@@ -730,6 +770,7 @@
 footer {
   background-color: #2C2C2C;
   max-height: 420px;
+  min-width: 1440px;
 }
 
 .footer {

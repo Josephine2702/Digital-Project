@@ -1,14 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/gl_style/global.css">
-    <title>Footer</title>
-</head>
-<body>
-    <footer>
+class MyHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <header class="header container">
+        <div class="header__logo">
+            <img src="./assets/image/logo.png" alt="logo">
+        </div>
+        <nav class="header__nav">
+            <a class="header__link" href="/main.html"><span>MAIN</span></a>
+            <a class="header__link" href="/gallery.html">GALLERY</a>
+            <a class="header__link" href="/our_projects.html">PROJECTS</a>
+            <a class="header__link" href="/sertif.html">CERTIFICATIONS</a>
+            <a class="header__link" href="/contacts.html">CONTACTS</a>
+        </nav>
+    </header>
+    `
+    }
+}
+
+customElements.define('my-header', MyHeader)
+
+class MyFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <footer>
         <div class="footer__content container">
             <div class="footer__logo">
                 <img src="./assets/image/logo_foter.png" alt="logo">
@@ -65,5 +79,8 @@
             <p class="footer__rights-titel">© 2021 All Rights Reserved</p> 
         </div>    
     </footer>
-</body>
-</html>
+        `
+    }
+}
+
+customElements.define('my-footer', MyFooter)

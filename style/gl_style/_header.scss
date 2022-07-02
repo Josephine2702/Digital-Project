@@ -12,8 +12,12 @@
     &__nav {
         flex-grow: 1;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        margin-left: -50px;
+    }
 
+    &__link {
+        margin-right: 60px;
     }
 
     a {
