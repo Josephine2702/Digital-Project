@@ -1,3 +1,8 @@
+.container{
+    @include container;
+    min-width: 1170px;
+}
+
 .project__content {
     padding: 0px 0px;
     display: grid;
@@ -20,14 +25,20 @@
     @include display_grid_project;
     @include display_flex_ourproject;
 
+
     &-text {
-        @include text_style
+        @include text_style;
     }
 
     &-title {
-        @include title_our_project
+        @include title_our_project;
+        
     }
 
+}
+
+.project__title{
+    margin-bottom: 60px;
 }
 
 .sample__first-img {
@@ -40,7 +51,6 @@
 }
 
 .sample__btn {
-
     @include button;
     @include button_title;
     background-color: #FFFFFF;
@@ -48,6 +58,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 .sample__second-content {

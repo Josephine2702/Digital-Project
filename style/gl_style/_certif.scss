@@ -2,7 +2,9 @@
     @include container;
     
 }
-
+.sertif__title{
+    margin-bottom: 60px;
+}
 .light_title{
     @include big_title_light;
     text-transform: uppercase;
