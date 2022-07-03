@@ -29,17 +29,17 @@ class MyFooter extends HTMLElement {
             </div>
             <div class="footer__info">
                 <h3>Information</h3>
-            <ul class="footer__info-container">
+                <ul class="footer__info-container">
                 <li class="footer__info-list">
-                    <a class="footer__info-link" href="#">Main</a></li>
+                    <a class="footer__info-link" href="./main.html">Main</a></li>
                 <li class="footer__info-list">
-                    <a class="footer__info-link" href="#">Gallery</a></li>
+                    <a class="footer__info-link" href="./gallery.html">Gallery</a></li>
                 <li class="footer__info-list">
-                    <a class="footer__info-link" href="#">Projects</a></li>
+                    <a class="footer__info-link" href="./our_projects.html">Projects</a></li>
                 <li class="footer__info-list">
-                    <a class="footer__info-list" href="#">Certifications</a></li>
+                    <a class="footer__info-list" href="./sertif.html">Certifications</a></li>
                 <li class="footer__info-list">
-                    <a class="footer__info-list" href="#">Contacts</a></li>           
+                    <a class="footer__info-list" href="./contacts.html">Contacts</a></li>           
             </ul>
             </div>
             <div class="footer__contacts">
