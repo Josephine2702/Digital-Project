@@ -132,3 +132,12 @@ $bacground-color: #FBFBFB;
     line-height: 47px;
     color: $light-color;
 }
+
+// Стиль линии к заголовку
+@mixin h1_with_line {
+    display: block;
+    width: 1170px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #F2F2F2;
+}
