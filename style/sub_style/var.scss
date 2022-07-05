@@ -4,6 +4,15 @@ $light-color: #BDBDBD;
 $footer-color: #2C2C2C;
 $bacground-color: #FBFBFB;
 
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
 @mixin container {
     max-width: 1200px;
     margin: 0 auto;

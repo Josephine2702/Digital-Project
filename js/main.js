@@ -1,16 +1,26 @@
 class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <header class="header container">
-        <div class="header__logo">
-            <img src="./assets/image/logo.png" alt="logo">
-        </div>
-        <nav class="header__nav">
-            <a class="header__link" href="/main.html"><span>MAIN</span></a>
-            <a class="header__link" href="/gallery.html">GALLERY</a>
-            <a class="header__link" href="/our_projects.html">PROJECTS</a>
-            <a class="header__link" href="/sertif.html">CERTIFICATIONS</a>
-            <a class="header__link" href="/contacts.html">CONTACTS</a>
+        <header class="header">
+        <nav class="navbar">
+            <div class="nav__logo"><img class="nav__logo" src="./assets/image/logo.png" alt="Logo"></div>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="./main.html" class="nav__link"> <span>MAIN</span></a></li>
+                <li class="nav__item">
+                    <a href="./gallery.html" class="nav__link">GALLERY</a></li>
+                <li class="nav__item">
+                    <a href="./our_projects.html" class="nav__link">PROJECTS</a></li>
+                <li class="nav__item">
+                    <a href="./sertif.html" class="nav__link">CERTIFICATIONS</a></li>
+                <li class="nav__item">
+                    <a href="./contacts.html" class="nav__link">CONTACTS</a></li>
+            </ul>
+            <div class="hamb">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     `
@@ -84,3 +94,22 @@ class MyFooter extends HTMLElement {
 }
 
 customElements.define('my-footer', MyFooter)
+
+let hamb = document.querySelector(".hamb")
+let navMenu = document.querySelector(".nav__menu")
+
+hamb.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamb.classList.toggle("active")
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav__link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamb.classList.remove("active");
+    navMenu.classList.remove("active");
+}

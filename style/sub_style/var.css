@@ -1,1 +1,8 @@
-/*# sourceMappingURL=var.css.map */
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=var.css.map */

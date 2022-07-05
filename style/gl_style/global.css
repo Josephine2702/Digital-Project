@@ -212,13 +212,13 @@
 .project__block .project__block-top {
   display: grid;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+      column-gap: 15px;
   grid-template-columns: 50% 50%;
 }
 .project__block .project__block-bottom {
   display: grid;
   -moz-column-gap: 38px;
-       column-gap: 38px;
+      column-gap: 38px;
   grid-template-columns: 1fr 2fr 2fr;
 }
 
@@ -628,25 +628,45 @@
 }
 
 .header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar {
   width: 100%;
-  min-height: 102px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 6.4rem;
+}
+
+.nav__menu {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-around;
   align-items: center;
 }
-.header__logo {
-  flex-basis: 25%;
-  justify-self: start;
+
+.bar {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin: 5px;
+  transition: 0.3s;
+  background-color: black;
+  border-radius: 3px;
 }
-.header__nav {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  margin-left: -50px;
+
+.hamb {
+  display: none;
 }
-.header__link {
-  margin-right: 60px;
+
+.nav__logo {
+  flex-basis: 20%;
 }
-.header a {
+
+.nav__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -655,13 +675,53 @@
   color: #333;
   text-transform: uppercase;
   text-decoration: none;
+  margin-right: 3.5rem;
 }
-.header span {
+
+.nav__link:hover {
   padding: 4px 8px 4px 8px;
   border-top: 1px #333 solid;
   border-bottom: 1px #333 solid;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.35s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.5);
+    left: -105%;
+    top: 6.4rem;
+  }
+
+  .nav__menu.active {
+    left: 0;
+  }
+
+  .nav__item {
+    margin: 2.5rem 0;
+  }
+
+  .hamb {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamb.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamb.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamb.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
 footer {
   background-color: #2C2C2C;
   max-height: 420px;
@@ -749,15 +809,6 @@ footer {
 .footer__logo {
   flex-grow: 1;
   margin-left: -35px;
-}
-
-ul {
-  margin-left: 0;
-  padding-left: 0;
-}
-
-li {
-  list-style: none;
 }
 
 a {

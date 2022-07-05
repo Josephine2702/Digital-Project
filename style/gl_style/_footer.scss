@@ -90,15 +90,6 @@ footer {
     }
 }
 
-ul {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-li {
-    list-style: none;
-}
-
 a {
     @include footer_text;
     text-decoration: none;
