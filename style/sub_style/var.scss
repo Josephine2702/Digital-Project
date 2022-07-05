@@ -8,7 +8,6 @@ $bacground-color: #FBFBFB;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    min-width: 1200px;
 }
 
 // кнопка
@@ -16,7 +15,6 @@ $bacground-color: #FBFBFB;
     width: 222px;
     height: 71px;
     cursor: pointer;
-
 }
 
 // стили для надписи на кнопке
@@ -133,4 +131,13 @@ $bacground-color: #FBFBFB;
     font-size: 40px;
     line-height: 47px;
     color: $light-color;
+}
+
+// Стиль линии к заголовку
+@mixin h1_with_line {
+    display: block;
+    width: 1170px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #F2F2F2;
 }

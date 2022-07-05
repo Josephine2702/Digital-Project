@@ -1,25 +1,23 @@
-.container{
 
-}
 
-.first_screen {
+.first-screen {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.light_title{
+.light-title{
     @include big_title_light;
     text-transform: uppercase;
     width: 280px;
 }
 
-.dark_title{
+.dark-title{
     @include big_title_dark;
     text-transform: none;
 }
 
-.first_screen__img{
+.first-screen__img{
     background-image: url('/assets/image/Rectangle_main.jpg');
     width: 770px;
     height: 829px;
@@ -28,7 +26,7 @@
 }
 
 
-.first_screen__btn{
+.first-screen__btn{
 align-self: flex-end;
 }
 
@@ -39,17 +37,16 @@ align-self: flex-end;
     align-items: center;
 }
 
-.first_screen__btn {
+.first-screen__btn {
     display: flex;
 }
     
-.btn_title{
+.btn-title{
     @include button_title;
 }
 
 .title-view{
     color: black;
-    margin-left: -15%;
 }
 
 .arrow {
@@ -65,7 +62,7 @@ align-self: flex-end;
     justify-content: center;
 }
 
-.about_images {
+.about__images {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 45% 45%;
@@ -76,8 +73,8 @@ align-self: flex-end;
 }
 
 .about__article {
-margin-top: -2.5%;
-margin-left: 30px;
+margin-left: 1.87em;
+margin-top: 1.56em;
 }
 
 .img--center {
@@ -104,21 +101,22 @@ margin-left: 30px;
 
     .title-read {
         color: black;
-
     }
 }
 
-
+.focus__block {
+    margin-bottom: 7.5em;
+}
 .focus__subtitle {
     margin-top: 9.3%;
-    margin-left: -1.5%;
+    margin-bottom: 3.8%;
+    
 }
 
 
 .focus__descr{
     display: flex;
     justify-content: space-between;
-    margin-left: -1.5%;
     }
 
 .state {
@@ -149,7 +147,7 @@ margin-left: 30px;
 }
 
 .focus__second {
-    flex-basis: 46%;
+    flex-basis: 50%;
     margin-right: 6%;
 }
 
@@ -165,16 +163,15 @@ margin-left: 30px;
     display: grid;
     gap: 30px;
 
-    .project__block_top{
+    .project__block-top{
         display: grid;
         column-gap: 15px;
         grid-template-columns: 50% 50%;
+}
 
-    }
-
-    .project__block_bottom{
+    .project__block-bottom{
         display: grid;
-        column-gap: 30px;
+        column-gap: 38px;
         grid-template-columns: 1fr 2fr 2fr;
     }
 }
@@ -187,18 +184,15 @@ margin-left: 30px;
     margin-bottom: 120px;
 }
 
-.project__btn{
+.ourproject__btn{
     display: flex;
     background-color: $primary-color;
-    
+}
 
     .title-all{
         color: white;
     }
-    .arrow_white{
-        margin-top: -2px;
-    }
-}
+    
 
 .contact__block{
     display: flex;

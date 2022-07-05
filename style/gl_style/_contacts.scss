@@ -1,4 +1,6 @@
-.light_title{
+
+.light_title {
+    @include big_title_light;
     text-transform: none;
 }
 
@@ -6,8 +8,7 @@
     margin-bottom: 34px;
 }
 
-
-.contacts__container{
+.contacts__container {
     max-width: 1440px;
     min-width: 1400px;
     width: 100%;
@@ -15,22 +16,22 @@
 
 }
 
-.contacts__img{
+.contacts__img {
     background-image: url('/assets/image/map.jpg');
     background-repeat: no-repeat;
     border: 1px solid black;
     max-width: 790px;
     height: 31em;
-    margin-left:  auto;
+    margin-left: auto;
 }
 
-.contacts__block{
+.contacts__block {
     display: flex;
     flex-direction: column;
     margin-top: -34%;
     margin-left: 8.4%;
 
-    .contacts__name{
+    .contacts__name {
         font-family: $font-stack;
         font-weight: 300;
         font-size: 16px;
@@ -38,15 +39,14 @@
         color: $primary-color;
         margin: 0;
         margin-top: -25px
-        
     }
 
-    .contacts__name-title{
+    .contacts__name-title {
         @include big_title_dark;
         font-size: 18px;
     }
 
-    .contacts__coordinate{
+    .contacts__coordinate {
         font-family: $font-stack;
         font-weight: 700;
         font-size: 18px;
@@ -55,7 +55,7 @@
         margin-top: 44px;
     }
 
-    .contacts__email{
+    .contacts__email {
         font-family: $font-stack;
         font-weight: 300;
         font-size: 16px;
@@ -66,14 +66,17 @@
 
     .btn {
         background-color: $primary-color;
-        display: flex ;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 33px;
         margin-bottom: 112px;
     }
     
-    .btn_title{
+    
+
+    .btn_title {
+        @include button_title;
         color: white;
         letter-spacing: 0.2em;
     }
