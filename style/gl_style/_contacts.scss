@@ -1,15 +1,11 @@
-.contacts{
-@include container;
-}
-
 .light_title{
-    @include big_title_light;
     text-transform: none;
 }
 
-.dark_title {
-    @include big_title_dark;
+.contacts__title{
+    margin-bottom: 34px;
 }
+
 
 .contacts__container{
     max-width: 1440px;
@@ -69,7 +65,6 @@
     }
 
     .btn {
-        @include button;
         background-color: $primary-color;
         display: flex ;
         justify-content: center;
@@ -79,7 +74,6 @@
     }
     
     .btn_title{
-        @include button_title;
         color: white;
         letter-spacing: 0.2em;
     }

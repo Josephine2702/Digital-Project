@@ -5,15 +5,17 @@ $footer-color: #2C2C2C;
 $bacground-color: #FBFBFB;
 
 @mixin container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    min-width: 1200px;
 }
 
 // кнопка
 @mixin button {
     width: 222px;
     height: 71px;
+    cursor: pointer;
 
 }
 

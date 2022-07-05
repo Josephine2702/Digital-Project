@@ -30,9 +30,6 @@
   font-style: normal;
 }
 .first_screen {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,6 +69,7 @@
 .btn {
   width: 222px;
   height: 71px;
+  cursor: pointer;
   background-color: white;
   justify-content: center;
   align-items: center;
@@ -102,10 +100,6 @@
 }
 
 .about {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  min-width: 1170px;
   height: 27em;
   background-color: #FBFBFB;
   display: flex;
@@ -159,13 +153,7 @@
   color: black;
 }
 
-.focus {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-  min-width: 1170px;
-}
-.focus .focus__subtitle {
+.focus__subtitle {
   margin-top: 9.3%;
   margin-left: -1.5%;
 }
@@ -211,12 +199,6 @@
   margin-right: 6.5%;
 }
 
-.project {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .project__subtitle {
   margin-bottom: 60px;
 }
@@ -242,7 +224,6 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 30px;
-  min-width: 1170px;
   margin-bottom: 120px;
 }
 
@@ -255,12 +236,6 @@
 }
 .project__btn .arrow_white {
   margin-top: -2px;
-}
-
-.contact {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .contact__block {
@@ -300,9 +275,10 @@
 }
 
 .gallery {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  min-width: 1200px;
   min-width: 1170px;
 }
 
@@ -324,9 +300,10 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  min-width: 1200px;
   min-width: 1170px;
 }
 
@@ -394,6 +371,7 @@
 .sample__btn {
   width: 222px;
   height: 71px;
+  cursor: pointer;
   text-decoration: none;
   font-family: "Roboto";
   font-weight: 400;
@@ -587,31 +565,15 @@
   color: black;
 }
 
-.certif {
-  max-width: 1170px;
+.container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  min-width: 1200px;
 }
 
 .sertif__title {
   margin-bottom: 60px;
-}
-
-.light_title {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 64px;
-  line-height: 64px;
-  color: #BDBDBD;
-  text-transform: uppercase;
-}
-
-.dark_title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 64px;
-  color: #333;
 }
 
 .certif__img {
@@ -626,27 +588,12 @@
   margin-bottom: 120px;
 }
 
-.contacts {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .light_title {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 64px;
-  line-height: 64px;
-  color: #BDBDBD;
   text-transform: none;
 }
 
-.dark_title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 64px;
-  color: #333;
+.contacts__title {
+  margin-bottom: 34px;
 }
 
 .contacts__container {
@@ -705,8 +652,6 @@
   margin-top: 53px;
 }
 .contacts__block .btn {
-  width: 222px;
-  height: 71px;
   background-color: #333;
   display: flex;
   justify-content: center;
@@ -715,13 +660,6 @@
   margin-bottom: 112px;
 }
 .contacts__block .btn_title {
-  text-decoration: none;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: white;
   letter-spacing: 0.2em;
 }
@@ -762,9 +700,10 @@
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  min-width: 1200px;
 }
 
 footer {
