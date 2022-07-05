@@ -19,9 +19,9 @@
 
 .bar {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin: 5px;
+    width: 24px;
+    height: 3px;
+    margin: 4px;
     transition: 0.3s;
     background-color: black;
     border-radius: 3px;
@@ -74,16 +74,15 @@
         cursor: pointer;
     }
 
-    .hamb.active .bar:nth-child(2) {
+    .hamb.active .bar:nth-child(1) {
         opacity: 0;
     }
 
-    .hamb.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-
+    .hamb.active .bar:nth-child(2) {
+        transform: rotate(45deg);
     }
 
     .hamb.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
     }
 }
