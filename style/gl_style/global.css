@@ -652,7 +652,7 @@ li {
 
 .nav__menu {
   display: flex;
-  flex-grow: 1;
+  flex-basis: 68%;
   justify-content: space-around;
   align-items: center;
 }
@@ -672,7 +672,7 @@ li {
 }
 
 .nav__logo {
-  flex-basis: 20%;
+  flex-basis: 32%;
 }
 
 .nav__link {
@@ -683,18 +683,18 @@ li {
   line-height: 12px;
   color: #333;
   text-transform: uppercase;
+  flex-basis: 13.5%;
   text-decoration: none;
-  margin-right: 3.5rem;
-  transition: 0.5;
+  transition: 1.2s;
 }
 
-.nav__link:hover {
-  padding: 4px 8px 4px 8px;
+.nav__item:hover {
+  transform: scale(1.2);
   border-top: 1px #333 solid;
   border-bottom: 1px #333 solid;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   .nav__menu {
     position: fixed;
     flex-direction: column;
