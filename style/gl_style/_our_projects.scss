@@ -1,13 +1,12 @@
 .container {
     @include container;
-    min-width: 1170px;
 }
 
-.project__title {
-    @include h1_with_line
+.project__title-main {
+    @include h1_with_line;
 }
 
-.project__content {
+.project__block {
     padding: 0px 0px;
     display: grid;
     grid-template-columns: 1fr;
@@ -17,94 +16,80 @@
         "second second"
         "third third";
     gap: 60px;
-}
-
-.project__first-content {
-    margin: 30px 30px 30px 30px;
+    margin-bottom: 120px;
 }
 
 .project__first {
     background-color: $bacground-color;
     grid-area: first;
-    @include display_grid_project;
-    @include display_flex_ourproject;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img text";
 
-
-    &-text {
-        @include text_style;
+    .project__img {
+        grid-area: img;
     }
 
-    &-title {
-        @include title_our_project;
-
+    .project__content {
+        grid-area: text;
     }
-
-}
-
-.project__first-img {
-    max-width: 100%
-}
-
-.project__btn-arrow {
-    width: 24px;
-    margin-left: 18px
-}
-
-.project__btn {
-    @include button;
-    @include button_title;
-    background-color: #FFFFFF;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 120px;
-    color: $primary-color;
-}
-
-.project__second-content {
-    margin: 30px 30px 30px 30px;
 }
 
 .project__second {
     background-color: $bacground-color;
     grid-area: second;
-    @include display_grid_project;
-    @include display_flex_ourproject;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img text";
 
-    &-text {
-        @include text_style;
-        max-width: 100%
+    .project__img {
+        grid-area: img;
     }
 
-    &-title {
-        @include title_our_project
+    .project__content {
+        grid-area: text;
     }
-
-    &-img {
-        max-width: 100%
-    }
-}
-
-.project__third-content {
-    margin: 30px 30px 30px 30px;
 }
 
 .project__third {
     background-color: $bacground-color;
     grid-area: third;
-    @include display_grid_project;
-    @include display_flex_ourproject;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "img text";
+}
 
-    &-text {
-        @include text_style
-    }
+.project__img {
+    grid-area: img;
+}
 
-    &-title {
-        @include title_our_project
-    }
+.project__content {
+    grid-area: text;
+}
 
-    &-img {
-        max-width: 100%
-    }
+.project__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px 30px 30px 30px;
+}
+
+.project__img {
+    max-width: 100%
+}
+
+.project__title {
+    @include title_our_project;
+}
+
+.project__text {
+    @include text_style;
+}
+
+.project__btn {
+    display: flex;
+    align-items: center;
 }
