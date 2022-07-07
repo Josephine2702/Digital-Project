@@ -93,8 +93,8 @@ li {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: normal;
     color: #FFFFFF;
 }
 
@@ -121,7 +121,7 @@ li {
 // Стиль линии к заголовку
 @mixin h1_with_line {
     display: block;
-    width: 1170px;
+    max-width: 1170px;
     padding-top: 30px;
     padding-bottom: 30px;
     margin-top: 30px;

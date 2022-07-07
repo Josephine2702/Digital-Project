@@ -5,14 +5,14 @@
 .navbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     min-height: 6.4rem;
 }
 
 .nav__menu {
     display: flex;
-    flex-basis: 68%;
+    flex-basis: 67%;
     justify-content: space-around;
     align-items: center;
 }
@@ -32,23 +32,23 @@
 }
 
 .nav__logo {
-    flex-basis: 32%;
+    flex-basis: 33%;
 }
 
 .nav__link {
     @include nav_style;
-    flex-basis: 13.5%;
+    flex-basis: 20%;
     text-decoration: none;
     transition: 1.2s;
 }
 
 .nav__item:hover {
-    transform: scale(1.2);
+    transform: scale(1);
     border-top: 1px #333 solid;
     border-bottom: 1px #333 solid;
 }
 
-@media only screen and (max-width:576px) {
+@media only screen and (max-width:480px) {
     .nav__menu {
         position: fixed;
         flex-direction: column;
