@@ -1,16 +1,14 @@
-
 .light_title {
     @include big_title_light;
     text-transform: none;
 }
 
-.contacts__title{
+.contacts__title {
     margin-bottom: 34px;
 }
 
 .contacts__container {
     max-width: 1440px;
-    min-width: 1400px;
     width: 100%;
     margin: 0 auto;
 
@@ -72,8 +70,8 @@
         margin-top: 33px;
         margin-bottom: 112px;
     }
-    
-    
+
+
 
     .btn_title {
         @include button_title;
