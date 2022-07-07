@@ -583,6 +583,7 @@ li {
   .project__content {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
   }
 
   .project__first {
@@ -622,6 +623,14 @@ li {
   }
   .project__third .project__content {
     grid-area: content;
+  }
+
+  .project__title {
+    margin-bottom: 10px;
+  }
+
+  .project__text {
+    margin-bottom: 10px;
   }
 }
 .sample__title {

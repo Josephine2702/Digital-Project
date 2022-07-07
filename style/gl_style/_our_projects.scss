@@ -110,6 +110,7 @@
     .project__content {
         display: flex;
         justify-content: flex-start;
+        align-items: center;
     }
 
     .project__first {
@@ -164,4 +165,11 @@
         }
     }
 
+    .project__title {
+        margin-bottom: 10px;
+    }
+
+    .project__text {
+        margin-bottom: 10px;
+    }
 }
