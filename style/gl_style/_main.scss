@@ -17,6 +17,72 @@
     text-transform: none;
 }
 
+.first-screen__title{
+    margin-bottom: 90px;
+}
+
+.switches{
+    margin-bottom: 94px;
+}
+
+.switch-arrow{
+    width: 17px;
+    margin-top: 5px;
+}
+
+
+.switch{
+    width: 3.3em;
+    height: 3.3em;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    
+}
+
+.right-switch {
+    margin-left: 20px;
+
+}
+
+.line{
+    width: 270px;
+    border: solid 1px $bacground-color;
+    position: relative;
+    bottom: 29px;
+    left: 129px;;
+}
+.switch:hover{
+    background-color: $bacground-color;
+}
+
+.left-arrow{
+    transform: rotate(180deg);
+    
+}
+
+.figures {
+    display: flex;
+}
+
+.figure{
+    font-family: $font-stack;
+    font-weight: 400;
+    font-size: 24px;
+    color: $light-color;
+}
+
+.figure:active{
+    color: black;
+}
+
+.border {
+    width: 44px;
+    border-bottom: solid 2px #E0E0E0;
+    transform: rotate(130deg);
+    align-self: center;
+    margin: 0 30px;
+}
+
 .first-screen__img{
     background-image: url('/assets/image/Rectangle_main.jpg');
     width: 770px;
@@ -165,17 +231,87 @@ margin-top: 1.56em;
 
     .project__block-top{
         display: grid;
-        column-gap: 15px;
-        grid-template-columns: 50% 50%;
+        column-gap: 30px;
+        grid-template-columns: 48.5% 49%;
 }
 
     .project__block-bottom{
         display: grid;
-        column-gap: 38px;
-        grid-template-columns: 1fr 2fr 2fr;
+        column-gap: 30px;
+        grid-template-columns: 25% 42% 28%;
     }
 }
 
+.project__box{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.project__box::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.671);
+    opacity: 0;
+    transition: all .4s ease;
+    content: '';
+}
+
+.project__box:hover:before {
+    opacity: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project__box-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.project__box-title{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 79px;
+    padding-bottom: 60px;
+    font-family: $font-stack;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    color: white;
+    transform: translateY(300px);
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.small-title{
+    font-size: 56px;
+    line-height: 50px;
+    padding-left: 50px;
+    padding-bottom: 90px;
+}
+
+.project__box:hover .project__box-title{
+    opacity: 0.9;
+    transform: translateY(0px);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.button-title{
+    display: flex;
+    align-items: center;
+}
+
+.title-more{
+    margin-top: 18px;
+}
 
 .btn-block{
     display: flex;
@@ -197,6 +333,10 @@ margin-top: 1.56em;
 .contact__block{
     display: flex;
     justify-content: space-between;
+}
+
+.contact__subtitle{
+    margin-bottom: 22px;
 }
 
 

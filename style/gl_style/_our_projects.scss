@@ -4,7 +4,8 @@
 }
 
 .project__title {
-    @include h1_with_line
+    @include h1_with_line;
+    margin-top: 2%;
 }
 
 .project__content {
@@ -17,6 +18,7 @@
         "second second"
         "third third";
     gap: 60px;
+    margin-bottom: 3.8%;
 }
 
 .project__first-content {
@@ -106,5 +108,16 @@
 
     &-img {
         max-width: 100%
+    }
+}
+
+.project__box1{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-bottom: 3.8%;
+
+    .project__number{
+        margin-right: 2%;
     }
 }
