@@ -12,16 +12,16 @@
 
 .nav__menu {
     display: flex;
-    flex-grow: 1;
+    flex-basis: 68%;
     justify-content: space-around;
     align-items: center;
 }
 
 .bar {
     display: block;
-    width: 33px;
-    height: 4px;
-    margin: 5px;
+    width: 24px;
+    height: 3px;
+    margin: 4px;
     transition: 0.3s;
     background-color: black;
     border-radius: 3px;
@@ -32,23 +32,23 @@
 }
 
 .nav__logo {
-    flex-basis: 20%;
+    flex-basis: 32%;
 }
 
 .nav__link {
     @include nav_style;
+    flex-basis: 13.5%;
     text-decoration: none;
-    margin-right: 3.5rem;
-    transition: 0.5;
+    transition: 1.2s;
 }
 
-.nav__link:hover {
-    padding: 4px 8px 4px 8px;
+.nav__item:hover {
+    transform: scale(1.2);
     border-top: 1px #333 solid;
     border-bottom: 1px #333 solid;
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:576px) {
     .nav__menu {
         position: fixed;
         flex-direction: column;
@@ -74,16 +74,15 @@
         cursor: pointer;
     }
 
-    .hamb.active .bar:nth-child(2) {
+    .hamb.active .bar:nth-child(1) {
         opacity: 0;
     }
 
-    .hamb.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-
+    .hamb.active .bar:nth-child(2) {
+        transform: rotate(45deg);
     }
 
     .hamb.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-7px) rotate(-45deg);
     }
 }

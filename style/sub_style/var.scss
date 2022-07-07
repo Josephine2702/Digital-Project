@@ -108,31 +108,6 @@ li {
     color: #FFFFFF;
 }
 
-//стиль грид для блоков страница Our Project
-@mixin display_grid_project {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "img text";
-
-    img {
-        grid-area: img;
-    }
-
-    article {
-        grid-area: text;
-    }
-}
-
-//стиль flex для блоков страница Our Project
-@mixin display_flex_ourproject {
-    article {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-}
-
 // стиль подзаголовок страница Our Project
 @mixin title_our_project {
     font-family: 'Roboto';
@@ -147,7 +122,9 @@ li {
 @mixin h1_with_line {
     display: block;
     width: 1170px;
+    padding-top: 30px;
     padding-bottom: 30px;
+    margin-top: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #F2F2F2;
 }
