@@ -137,5 +137,7 @@ a {
 
     .footer__sm-content {
         grid-area: sm;
+        display: flex;
+        justify-content: space-around;
     }
 }

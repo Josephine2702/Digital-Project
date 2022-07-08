@@ -39,3 +39,30 @@
         margin-right: 2%;
     }
 }
+
+@media only screen and (max-width: 480px) {
+    .gallery__title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery__item:hover {
+        transform: none;
+    }
+
+    .gallery__item {
+        max-width: 210px;
+        max-height: 260px;
+    }
+
+    .light-title {
+        text-align: center;
+    }
+}
