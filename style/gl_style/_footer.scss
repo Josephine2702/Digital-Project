@@ -5,64 +5,83 @@
 }
 
 .footer__content {
-    padding-top: 3.75em;
+    max-height: 350px;
+    padding-top: 3.75rem;
     display: flex;
     justify-content: space-between;
+
 }
 
+.footer__logo {
+    flex-basis: 20%;
+    padding-right: 2rem;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
 .footer__info {
-    flex-grow: 1;
+    flex-basis: 20%;
 
     h3 {
         @include footer_h;
         margin-top: 0;
-        margin-bottom: 26px;
+        margin-bottom: 1.62rem;
 
     }
 
     li {
-        padding-bottom: 20px;
+        padding-bottom: 10%;
+        padding-right: 2rem;
     }
 }
 
 .footer__contacts {
-    flex-grow: 1;
+    flex-basis: 35%;
 
     h3 {
         @include footer_h;
         margin-top: 0;
-        margin-bottom: 30px;
+        margin-bottom: 1.8rem;
     }
 
     img {
-        padding-right: 15px;
-    }
-
-    .footer__link-break {
-        padding-left: 24px;
-        padding-bottom: 40px;
+        max-width: 100%;
+        padding-right: 0.9rem;
     }
 
     li {
-        padding-bottom: 30px;
+        padding-bottom: 7%;
 
     }
+
+}
+
+.footer__contacts-link-break {
+    padding-left: 1.5rem;
+    padding-bottom: 11%;
 }
 
 .footer__sm {
-    flex-grow: 0.5;
-    display: inline;
-    padding-right: 33px;
+    flex-basis: 20%;
+
 
     h3 {
         @include footer_h;
         margin-top: 0;
-        margin-bottom: 28px;
+        margin-bottom: 1.8rem;
     }
 }
 
 .footer__sm-title {
-    margin-bottom: 26px;
+    margin-bottom: 1.62rem;
+}
+
+.footer__sm-content {
+    display: flex;
+    flex-direction: row;
 }
 
 .footer__rights {
@@ -79,12 +98,6 @@
 
 }
 
-.footer__logo {
-    flex-grow: 1;
-    margin-left: -35px;
-}
-
-
 a {
     @include footer_text;
     text-decoration: none;
@@ -92,11 +105,39 @@ a {
 
 @media only screen and (max-width:480px) {
 
-    .footer__info-container {
+    .footer__logo {
         display: none;
     }
 
-    .info__title {
+    .footer__info {
         display: none;
+    }
+
+    .footer__sm-title {
+        display: none;
+    }
+
+    .footer__contacts-title {
+        display: none;
+    }
+
+    .footer__content {
+        display: grid;
+        grid-column: 2fr;
+        grid-template-rows: 1fr 2fr;
+        grid-template-areas:
+            "sm"
+            "contacts";
+        justify-content: center;
+    }
+
+    .footer__contacts-item {
+        grid-area: contacts;
+    }
+
+    .footer__sm-content {
+        grid-area: sm;
+        display: flex;
+        justify-content: space-around;
     }
 }
