@@ -1,19 +1,15 @@
-.container{
-    @include container;
-}
-
 .sertif__title{
     margin-bottom: 60px;
 }
 
 
 .certif__img{
-    width: 600px;
-}
+    width: 100%;
+    }
 
 .certif__block{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 450px);
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin-bottom: 120px;

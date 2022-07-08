@@ -38,10 +38,21 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .first-screen {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.first-screen-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 400px;
 }
 
 .light-title {
@@ -51,7 +62,7 @@ li {
   line-height: 64px;
   color: #BDBDBD;
   text-transform: uppercase;
-  width: 280px;
+  width: 17.5%;
 }
 
 .dark-title {
@@ -61,14 +72,6 @@ li {
   line-height: 64px;
   color: #333;
   text-transform: none;
-}
-
-.first-screen__title {
-  margin-bottom: 90px;
-}
-
-.switches {
-  margin-bottom: 94px;
 }
 
 .switch-arrow {
@@ -88,7 +91,7 @@ li {
 }
 
 .line {
-  width: 270px;
+  width: 97%;
   border: solid 1px #FBFBFB;
   position: relative;
   bottom: 29px;
@@ -126,15 +129,16 @@ li {
   margin: 0 30px;
 }
 
-.first-screen__img {
-  background-image: url("/assets/image/Rectangle_main.jpg");
-  width: 770px;
-  height: 829px;
+.first-screen__box {
+  position: relative;
+  max-width: 48.1em;
+  max-height: 51em;
   margin-bottom: 120px;
   display: flex;
 }
 
 .first-screen__btn {
+  position: absolute;
   align-self: flex-end;
 }
 
@@ -178,17 +182,21 @@ li {
 }
 
 .about__images {
+  flex-basis: 50%;
   margin-top: 30px;
   display: grid;
   grid-template-columns: 45% 45%;
   grid-template-rows: 63% 1fr;
   gap: 40px;
-  margin-left: 80px;
+  margin-left: 5em;
 }
 
 .about__article {
+  display: flex;
+  flex-direction: column;
   margin-left: 1.87em;
   margin-top: 1.56em;
+  flex-grow: 1;
 }
 
 .img--center {
@@ -210,11 +218,13 @@ li {
 .about__text {
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.65rem;
   color: black;
-  max-width: 400px;
-  margin-bottom: 13%;
+  max-width: 25rem;
+  margin-bottom: 8%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .about__btn {
@@ -389,9 +399,29 @@ li {
   margin-bottom: 22px;
 }
 
+.contact__img {
+  height: 370px;
+  flex-grow: 0;
+  overflow: hidden;
+}
+
+.contact__img-inner {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+  margin-left: 20px;
+}
+
+.contact__form {
+  flex-basis: 40%;
+  min-width: 390px;
+}
+
 .contact__form-item {
-  width: 380px;
-  height: 46px;
+  max-width: 400px;
+  width: 100%;
+  min-height: 46px;
   background-color: #FBFBFB;
   margin-bottom: 10px;
   padding-left: 21px;
@@ -407,7 +437,7 @@ li {
 .message {
   padding-top: 14px;
   resize: none;
-  height: 8.6em;
+  height: 10.4em;
   margin-bottom: 4.8em;
 }
 
@@ -420,6 +450,87 @@ li {
   color: white;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 990px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .figure {
+    font-size: 24px;
+  }
+
+  .border {
+    width: 36px;
+    margin: 0 15px;
+  }
+
+  .about__images {
+    grid-template-rows: 45% 1fr;
+    margin-top: 8%;
+  }
+
+  .focus__descr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number {
+    font-size: 150px;
+    line-height: 150px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 760px;
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .switch {
+    width: 2.8em;
+    height: 2.8em;
+  }
+
+  .figure {
+    font-size: 18px;
+  }
+
+  .border {
+    width: 36px;
+    margin: 0 15px;
+  }
+
+  .focus__descr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .number {
+    font-size: 150px;
+    line-height: 150px;
+  }
+
+  .about__images {
+    grid-template-rows: 30% 1fr;
+    margin-top: 12%;
+  }
+
+  .projects__box-title {
+    padding-left: 60px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    line-height: 32px;
+  }
+
+  .small-title {
+    font-size: 38px;
+    line-height: 32px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+  }
+}
 .gallery {
   max-width: 1200px;
   width: 100%;
@@ -553,8 +664,8 @@ li {
 .project__text {
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.65rem;
   color: black;
 }
 
@@ -609,18 +720,11 @@ li {
 .sample__text {
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.65rem;
   color: black;
   grid-area: three;
   margin: 0;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .sertif__title {
@@ -628,12 +732,12 @@ li {
 }
 
 .certif__img {
-  width: 600px;
+  width: 100%;
 }
 
 .certif__block {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 450px);
   grid-template-rows: 1fr 1fr;
   gap: 30px;
   margin-bottom: 120px;
@@ -654,7 +758,6 @@ li {
 
 .contacts__container {
   max-width: 1440px;
-  min-width: 1400px;
   width: 100%;
   margin: 0 auto;
 }
