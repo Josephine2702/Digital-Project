@@ -629,6 +629,7 @@ img {
 
   .contact__form {
     margin-left: 5%;
+    max-width: 480px;
   }
 }
 .gallery {
