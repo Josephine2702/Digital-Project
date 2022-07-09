@@ -1,17 +1,30 @@
-.sertif__title{
+.sertif__title {
     margin-bottom: 3.8%;
     margin-top: 3.8%;
 }
 
 
-.certif__img{
+.certif__img {
     width: 100%;
-    }
+}
 
-.certif__block{
+.certif__block {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 450px);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 450px));
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     margin-bottom: 7.6%;
+}
+
+@media only screen and (max-width: 479px) {
+
+    .light-title {
+        font-size: 34px;
+        line-height: 34px;
+    }
+
+    .dark-title {
+        font-size: 34px;
+        line-height: 34px;
+    }
 }

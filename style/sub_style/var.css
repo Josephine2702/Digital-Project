@@ -9,4 +9,16 @@ li {
 
 img {
   max-width: 100%;
+}
+
+@media only screen and (max-width: 479px) {
+  .light-title {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .dark-title {
+    font-size: 34px;
+    line-height: 34px;
+  }
 }/*# sourceMappingURL=var.css.map */
