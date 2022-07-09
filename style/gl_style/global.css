@@ -657,7 +657,7 @@ img {
   display: flex;
   justify-content: baseline;
   align-items: baseline;
-  margin-bottom: 3.8%;
+  margin-bottom: 7%;
 }
 .gallery__box .gallery__number {
   margin-right: 2%;
@@ -802,6 +802,7 @@ img {
 }
 .project__box1 .project__number {
   margin-right: 2%;
+  margin-bottom: 7%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -930,7 +931,8 @@ img {
   }
 }
 .sertif__title {
-  margin-bottom: 60px;
+  margin-bottom: 3.8%;
+  margin-top: 3.8%;
 }
 
 .certif__img {
@@ -942,7 +944,7 @@ img {
   grid-template-columns: repeat(auto-fill, 450px);
   grid-template-rows: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 7.6%;
 }
 
 .contacts__title {
