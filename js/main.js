@@ -6,7 +6,7 @@ class MyHeader extends HTMLElement {
             <div class="nav__logo"><img class="nav__logo" src="./assets/image/logo.png" alt="Logo"></div>
             <ul class="nav__menu">
                 <li class="nav__item">
-                    <a href="./main.html" class="nav__link"> <span>MAIN</span></a></li>
+                    <a href="./index.html" class="nav__link"> <span>MAIN</span></a></li>
                 <li class="nav__item">
                     <a href="./gallery.html" class="nav__link">GALLERY</a></li>
                 <li class="nav__item">
@@ -41,7 +41,7 @@ class MyFooter extends HTMLElement {
             <h3 class="info__title">Information</h3>
         <ul class="footer__info-container">
             <li class="footer__info-list">
-                <a class="footer__info-link" href="./main.html">Main</a></li>
+                <a class="footer__info-link" href="./index.html">Main</a></li>
             <li class="footer__info-list">
                 <a class="footer__info-link" href="./gallery.html">Gallery</a></li>
             <li class="footer__info-list">
